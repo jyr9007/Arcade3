@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Your Name">
+  <title>Arcade Statistics Tracker</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>Welcome to the Arcade!</h1>
+  <p>Choose a game to play:</p>
+  <button onclick="guessingGame()">Guessing Game</button>
+  <button onclick="consultOracle()">Consult the Oracle</button>
+  <button onclick="bnh()">Bear, Ninja, Hunter</button>
+  <div id="farewell" style="display: none;">
+    <p>Thank you for playing! Have a great day!</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Statistic</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Total Games Played</td>
+          <td id="totalGames"></td>
+        </tr>
+        <tr>
+          <td>Total Wins</td>
+          <td id="totalWins"></td>
+        </tr>
+        <tr>
+          <td>Win Percentage</td>
+          <td id="winPercentage"></td>
+        </tr>
+      </tbody>
+    </table>
+    <button onclick="location.reload()">Play Again</button>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
