@@ -30,15 +30,15 @@ button:hover {
 }
 
 table {
-  margin: 20px auto;
+  margin: 0 auto;
   border-collapse: collapse;
-  width: 60%;
+  width: 50%;
+  text-align: center;
 }
 
 th, td {
   border: 1px solid #ddd;
-  padding: 8px;
-  text-align: center;
+  padding: 10px;
 }
 
 th {
@@ -46,6 +46,6 @@ th {
   color: white;
 }
 
-td {
-  background-color: #f9f9f9;
+tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
